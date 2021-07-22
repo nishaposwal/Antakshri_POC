@@ -1,0 +1,44 @@
+.app-component {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    .main-container {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        flex-direction: column;
+        .question-container {
+            height: 40%;
+            width: 95%;
+            overflow: hidden;
+            overflow-x: auto;
+        }
+        .result-container {
+            height: 40%;
+            width: 90%;
+            overflow: hidden;
+            overflow-x: auto;
+        }
+        .mic-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
