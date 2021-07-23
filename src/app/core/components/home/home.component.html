@@ -1,0 +1,23 @@
+<div class="app-component">
+    <div class="top">
+        <div class="tv">
+
+        </div>
+        <div class="tasks">
+            <div class="task" *ngFor="let task of tasks; let i = index" [class.selected]="currentQuestion == task"
+                (click)="selectTask(task)">
+                {{task.name}}
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        {{currentQuestion.question}}
+    </div>
+
+    <div class="mic">
+        <div class="mic-image">
+            <img src="assets/images/mic.svg" alt="" [class.tapped]="micTapped" (click)="checkRecroding()">
+        </div>
+        Tap to sing
+    </div>
+</div>
